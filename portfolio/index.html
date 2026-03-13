@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yvann Zebelus – Développeur Web & Applications</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo"><span class="logo-bracket">&lt;</span>YZ<span class="logo-bracket">/&gt;</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="apropos.html">À Propos</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="veille.html">Veille Technologique</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg-code">
+      <pre class="bg-code">
+const developer = {
+  name: "Yvann Zebelus",
+  role: "Développeur Web & Apps",
+  stack: ["PHP", "JS", "SQL", "HTML/CSS"],
+  status: "available()",
+};</pre>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">// BTS SIO SLAM</div>
+      <h1 class="hero-name">Yvann <span class="accent">Zebelus</span></h1>
+      <h2 class="hero-subtitle">Développeur Web <span class="cursor-blink">_</span><br>& Applications</h2>
+      <p class="hero-desc">Bienvenue sur mon portfolio. Je suis un étudiant passionné en BTS SIO SLAM, spécialisé dans le développement d'applications et de solutions logicielles.</p>
+      <a href="contact.html" class="btn-primary">Me Contacter <span class="arrow">→</span></a>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">yvann@portfolio:~</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="output">Yvann Zebelus</p>
+        <p><span class="prompt">$</span> cat skills.txt</p>
+        <p class="output">HTML/CSS ██████████ 90%</p>
+        <p class="output">JavaScript ████████░░ 75%</p>
+        <p class="output">PHP ███████░░░ 70%</p>
+        <p class="output">SQL ███████░░░ 65%</p>
+        <p class="output">Python █████░░░░░ 50%</p>
+        <p><span class="prompt">$</span> <span class="cursor-inline">█</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section skills-section">
+    <h2 class="section-title"><span class="comment">// </span>Mes Compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">{ }</span>
+          <h3>Langages de Programmation</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-label"><span>HTML/CSS</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>JavaScript</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>PHP</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>SQL</span><span>65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Python</span><span>50%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:50%"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-header">
+          <span class="skill-icon">⚙</span>
+          <h3>Compétences Techniques</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-label"><span>Développement Web</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Bases de Données</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-label"><span>Gestion de Projet</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="footer-logo"><span class="logo-bracket">&lt;</span>YZ<span class="logo-bracket">/&gt;</span></div>
+    <p class="footer-name">Yvann Zebelus</p>
+    <p class="footer-info">📍 Chemin Capulo 2 Morne Pavillon Morne Pitault</p>
+    <p class="footer-info">📞 0696 56 77 73</p>
+  </div>
+  <div class="footer-right">
+    <p>© 2026 Yvann Zebelus – Tous droits réservés</p>
+    <p>Développeur Web et Applications – BTS SIO SLAM</p>
+  </div>
+</footer>
+
+</body>
+</html>
