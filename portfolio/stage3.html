@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stage 3 – Siper – Yvann Zebelus</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo"><span class="logo-bracket">&lt;</span>YZ<span class="logo-bracket">/&gt;</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="apropos.html">À Propos</a></li>
+    <li><a href="stages.html" class="active">Stages</a></li>
+    <li><a href="veille.html">Veille Technologique</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="section">
+    <h1 class="page-title">Mes Stages</h1>
+
+    <div class="stage-intro">
+      <p>Dans le programme du BTS SIO spécialisation SLAM, les étudiants sont requis de compléter deux stages pratiques au cours de leur formation, aboutissant à la rédaction d'un rapport final. L'objectif de ce rapport est de mesurer les compétences et connaissances développées par les étudiants au fil de ces expériences, en prenant en compte les thématiques traitées.</p>
+      <p>Pendant mes deux années de formation, j'ai effectué trois stages : au CAMPUS de Schoelcher, au lycée Joseph Gaillard, puis sur le projet Siper, réalisé à distance pour une structure matricielle. Ces expériences m'ont permis d'approfondir mes connaissances dans les langages et frameworks tels que PHP et Laravel, ainsi que de développer mes compétences en gestion de projets et en résolution de problèmes.</p>
+    </div>
+
+    <div class="tab-container">
+      <a href="stages.html" class="tab-btn">
+        <span class="tab-icon">💾</span> Stage 1
+      </a>
+      <a href="stage2.html" class="tab-btn">
+        <span class="tab-icon">🌐</span> Stage 2
+      </a>
+      <a href="stage3.html" class="tab-btn active">
+        <span class="tab-icon">🧩</span> Stage 3 – Siper
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="stage-header">
+        <h2>Stage sur le projet Siper</h2>
+      </div>
+
+      <div class="stage-meta">
+        <div class="meta-item">
+          <span class="meta-label">📅 Période</span>
+          <span class="meta-value">Mai – juin 2026 (à distance)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">🏛 Organisation</span>
+          <span class="meta-value">Structure matricielle</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">👤 Tuteur</span>
+          <span class="meta-value">Raphaël Privilog</span>
+        </div>
+      </div>
+
+      <div class="stage-section">
+        <h3>// Contexte</h3>
+        <p>Siper est une marketplace d'activités pour enfants en Martinique : des structures professionnelles (sport, loisirs créatifs, stages vacances, soutien scolaire, musique, danse…) y publient leurs activités, et les parents les consultent et y inscrivent leurs enfants. Le projet est développé en équipe, avec trois rôles : administrateur, professionnel et parent.</p>
+      </div>
+
+      <div class="stage-section">
+        <h3>// Missions</h3>
+        <ul class="tasks-list">
+          <li>Mise en place de l'environnement : Docker (PHP-FPM 8.3, Nginx, MySQL 8), séparation des hôtes <code>siper.local</code> et <code>api.siper.local</code>, CORS restreint.</li>
+          <li>API REST Laravel 11 : inscription, connexion et déconnexion (Sanctum), rôles et permissions (Spatie Permission).</li>
+          <li>CRUD des activités, des catégories, des communes et des sessions, avec génération de sessions récurrentes.</li>
+          <li>Autorisations par Policies et validation des activités par l'administrateur (approbation ou rejet motivé).</li>
+          <li>Catalogue public : liste, détail, recherche et filtres (âge…), vues Blade avec Alpine.js, palette de couleurs et logo Siper.</li>
+          <li>Qualité : tests Pest, pipeline GitLab CI, travail par branches de fonctionnalités et merge requests.</li>
+          <li>Documentation : README, CLAUDE.md et .env.example pour permettre à un autre développeur de lancer le projet.</li>
+        </ul>
+      </div>
+
+      <div class="stage-section">
+        <h3>// Technologies utilisées</h3>
+        <p>Laravel 11 · Breeze · Sanctum · Spatie Permission · MySQL 8 · Docker · Nginx · Alpine.js · Vite · Pest · Git / GitLab CI</p>
+      </div>
+
+      <div class="stage-section">
+        <h3>// Captures d'écran</h3>
+        <div class="screenshots-grid">
+          <!-- À compléter : déposer les captures dans screenshots/ puis décommenter
+          <div class="screenshot-placeholder"><img src="screenshots/siper_liste.png" alt="Siper – liste des activités avec recherche et filtres"></div>
+          <div class="screenshot-placeholder"><img src="screenshots/siper_detail.png" alt="Siper – détail d'une activité"></div>
+          <div class="screenshot-placeholder"><img src="screenshots/siper_gitlab.png" alt="Siper – merge requests et pipeline GitLab"></div>
+          -->
+        </div>
+      </div>
+
+      <div class="stage-section">
+        <h3>// Ce que j'ai appris</h3>
+        <div class="conclusion-box">
+          Ce stage m'a appris à construire une application Laravel structurée : séparer la validation (Form Requests) de l'autorisation (Policies), gérer des rôles avec Spatie, et garantir le comportement par des tests automatisés. J'ai aussi pris l'habitude du travail en équipe à distance : branches de fonctionnalités, merge requests, commits clairs et documentation à jour.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    <div class="footer-logo"><span class="logo-bracket">&lt;</span>YZ<span class="logo-bracket">/&gt;</span></div>
+    <p class="footer-name">Yvann Zebelus</p>
+    <p class="footer-info">📍 Chemin Capulo 2 Morne Pavillon Morne Pitault</p>
+    <p class="footer-info">📞 0696 56 77 73</p>
+  </div>
+  <div class="footer-right">
+    <p>© 2026 Yvann Zebelus – Tous droits réservés</p>
+    <p>Développeur Web et Applications – BTS SIO SLAM</p>
+  </div>
+</footer>
+
+</body>
+</html>
